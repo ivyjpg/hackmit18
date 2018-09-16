@@ -1,4 +1,4 @@
-document.body.innerHTML = "hi"
+//document.body.innerHTML = "hi"
 var myData = localStorage['dataToPass'];
 localStorage.removeItem('dataToPass'); // Clear the localStorage
 var requests = myData[0];

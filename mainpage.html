@@ -1,14 +1,18 @@
 <html>
     <header>
+        <h1>Welcome to Resource Relocator</h1>
         <nav>
             <ul class="nav">
-                <li><a href="mainpage.html">Home</a></li>
-                <li><a href="listpage.html">Dinosaurs</a></li>
+                <!--<li><a href="mainpage.html">Home</a></li>
+                <li><a href="listpage.html">See Requests</a></li>
+                <li><a href="listpage.html">See Offers</a></li>-->
+                <button id="showrequest">See Requests</button>
+                <button id="showoffer">See Offers</button>
             </ul>
         </nav>
     </header>
     <head>
-        <title>Resource Recognizer</title>
+        <title>Resource Relocator</title>
         <link rel="stylesheet" type="text/css" href="mainpage.css">
         <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
         
@@ -33,29 +37,32 @@
         <script src="mainpage.js"></script>
     </head>
     <body>
-        <h1>Welcome to Resource Recognizer</h1>
+        <br>
+        <p>Enter information in all three fields below.
+        <br>To expedite the resource matching process, please be as specific as possible.</p>
 
         <form>
-            Type of resource:
+            Resource:
             <input id="resourcetext" type="text" name="resource" placeholder="ex: blankets, food, first aid"><br>
             <!--<div class="gray">(ex: blankets, food, first aid)</div>
             <br>-->
             Quantity:
-            <input id="quantitytext" type="text" name="quantity" placeholder="ex: enough food for 2 adults"><br>
+            <input id="quantitytext" type="text" name="quantity" placeholder="ex: enough food for 2 adults for 1 day"><br>
             Location:
-            <input id="locationtext" type="text" name="location" placeholder="ex: Dublin, California, USA"><br>
+            <input id="locationtext" type="text" name="location" placeholder="ex: 777 Massachusetts Avenue, Cambridge, MA 02139"><br>
         </form>
 
-        <h2><strong>Select an option:</strong></h2>
+        <h2>Select an option:</h2>
 
-        <div class="options">
-            <button id="offerbutton">Offer Resources  / Fufill a Request</button>
-            <!--<a href="/offer"><p>Offer Resources  / Fufill a Request</p></a>-->
-        </div>
-        <br>
+      
         <div class="options">
             <button id="requestbutton">Request Resources</button>
             <!--<a href="/request"><p>Request Resources</p></a>-->
+        </div>
+        <br>
+        <div class="options">
+            <button id="offerbutton">Offer Resources  / Fufill a Request</button>
+            <!--<a href="/offer"><p>Offer Resources  / Fufill a Request</p></a>-->
         </div>
 
         
