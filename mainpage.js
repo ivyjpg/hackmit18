@@ -49,14 +49,13 @@ showrequest.addEventListener('click', getRequests, false);
 
 function getRequests() {
     a = "";
-    dummy=[['blanket', 'for 1 adult', '52 Rode Ln, New Orleans, LA'], ['clothing sets', '1 adult and 2 children', '234 Laine Rd, San Francisco, CA'], ['a', 'b', 'c']]
-    for (i=0; i<dummy.length+requests.length-1; i++){
-        req1=("Resource: " + (dummy[i])[0]);
-        req2=("Quantity: " + (dummy[i])[1]);
-        req3=("Location: " + (dummy[i])[2]);
+    for (i=0; i<requests.length; i++){
+        req1=("Resource: " + requests[i].resource);
+        req2=("Quantity: " + requests[i].quantity);
+        req3=("Location: " + requests[i].location);
         a = a +("\nRequest "+(i+1) +": \n"+req1 + "\n" + req2 + "\n" + req3 + "\n");
     }
-    //alert(requests[0]);
+
     alert('Here are the requests:' +"\n"+ a);
 };
 
@@ -85,9 +84,9 @@ function getOffers() {
     b = "";
     dummy2 = [['sleeping bag', 'for 1 adult', '60 Rode Ln, New Orleans, LA']]
     for (i=0; i<offers.length; i++){
-        off1=("Resource: " + (dummy2[i])[0]);
-        off2=("Quantity: " + (dummy2[i])[1]);
-        off3=("Location: " + (dummy2[i])[2]);
+        off1=("Resource: " + (offers[i].resource));
+        off2=("Quantity: " + (offers[i].quantity));
+        off3=("Location: " + (offers[i].location));
         b = b +("\nOffer "+(i+1) +": \n"+off1 + "\n" + off2 + "\n" + off3 + "\n");
     }
     alert('Here are the offers:' +"\n"+ b);
