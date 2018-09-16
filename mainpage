@@ -9,11 +9,13 @@
 
         <form>
             Type of resource:
-            <input type="text" name="resource"><br>
-            <div class="gray">(ex: blankets, food, first aid)</div>
-            <br>
+            <input type="text" name="resource" placeholder="ex: blankets, food, first aid"><br>
+            <!--<div class="gray">(ex: blankets, food, first aid)</div>
+            <br>-->
             Quantity:
-            <input type="text" name="quantity"><br>
+            <input type="text" name="quantity" placeholder="ex: enough food for 2 adults"><br>
+            Location:
+            <input type="text" name="location" placeholder="ex: Dublin, California, USA"><br>
         </form>
 
         <h2><strong>Select an option:</strong></h2>
