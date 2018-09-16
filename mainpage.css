@@ -68,7 +68,7 @@ form{
     border-radius:5px;
     font-size:20px;
     margin:auto;
-    padding-bottom:20px;
+    margin-bottom:-10px;
     border: 2px solid bisque;
 }
 
@@ -117,7 +117,7 @@ input[type=text] {
     color:darkred;
     font-style:bold;
 }
-
+ 
 #showrequest {
     font-family:'Viga';
     font-size:16px;
@@ -168,4 +168,12 @@ ul li {
     border-radius:14px;
     margin:auto;
     margin-left:15px;
+}
+
+.info{
+    margin-top:-10px;
+    padding-bottom:15px;
+    font-style:none;
+    font-size:15px;
+    color:gray;
 }
