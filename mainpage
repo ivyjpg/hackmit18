@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Resource Recognizer</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+    </head>
+    <body>
+        <h1>Welcome to Resource Recognizer</h1>
+
+        <form>
+            Type of resource:
+            <input type="text" name="resource"><br>
+            <div class="gray">(ex: blankets, food, first aid)</div>
+            <br>
+            Quantity:
+            <input type="text" name="quantity"><br>
+        </form>
+
+        <h2><strong>Select an option:</strong></h2>
+
+        <div class="options">
+            <a href="/offer"><p>Offer Resources  / Fufill a Request</p></a>
+        </div>
+        <br>
+        <div class="options">
+            <a href="/request"><p>Request Resources</p></a>
+        </div>
+
+        
+
+        <!--<div id="submit">
+        <a href="/submitted"><p>SUBMIT</p></a>
+        </div>-->
+
+    </body>
